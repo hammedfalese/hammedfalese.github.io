@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hammed Falese | LLM Evaluator & AI Quality Specialist (RLHF, Factuality, Safety, Multimodal)</title>
+<meta name="description" content="LLM Evaluator and AI Quality Specialist with 4+ years in RLHF preference data, response ranking, factuality and AI safety review, multimodal evaluation, and annotation QA. 92 BLEND QC assignments completed above the 95% accuracy threshold.">
+<meta name="author" content="Hammed Falese">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hammed Falese | LLM Evaluator & AI Quality Specialist">
+<meta property="og:description" content="Evaluating AI outputs for accuracy, safety, factuality, and human alignment. RLHF, response ranking, multimodal evaluation, and annotation QA.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hammed Falese | LLM Evaluator & AI Quality Specialist">
+<meta name="twitter:description" content="Evaluating AI outputs for accuracy, safety, factuality, and human alignment. RLHF, response ranking, multimodal evaluation, and annotation QA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<style>
+:root{--bg:#0e1319;--panel:#151c25;--line:#263140;--text:#e9e7e1;--mute:#9aa6b4;--acc:#d9b26f;--cool:#7fb5c9;--on-acc:#1a1405;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f5f4f0;--panel:#fff;--line:#d8d6cf;--text:#17202a;--mute:#566474;--acc:#8a6320;--cool:#2a6a85;--on-acc:#fff}}
+:root[data-theme="light"]{--bg:#f5f4f0;--panel:#fff;--line:#d8d6cf;--text:#17202a;--mute:#566474;--acc:#8a6320;--cool:#2a6a85;--on-acc:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:.6rem}
+h3{font-size:1.35rem;line-height:1.25}
+p{margin:0 0 1rem;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+section{padding:5.5rem 0;border-top:1px solid var(--line)}
+.lead{color:var(--mute);font-size:1.1rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.4rem;align-items:center;overflow-x:auto;padding-top:.8rem;padding-bottom:.8rem;font-size:.95rem;white-space:nowrap}
+nav b{font-family:Newsreader,serif;font-weight:500;font-size:1.15rem;margin-right:auto}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--text)}
+.btn{display:inline-block;padding:.8rem 1.3rem;border-radius:6px;border:1px solid var(--line);text-decoration:none;font-weight:500;font-size:.98rem}
+.btn.p{background:var(--acc);color:var(--on-acc);border-color:var(--acc)}
+.btn:hover{border-color:var(--acc)}
+.hero{border:0;padding:5rem 0 4.5rem}
+.hero .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:3rem;align-items:center}
+h1{font-size:clamp(2.5rem,6.2vw,4.6rem);letter-spacing:-.02em}
+.sub{margin:1.5rem 0 2rem;font-size:1.15rem;color:var(--mute)}
+.ctas{display:flex;gap:.7rem;flex-wrap:wrap}
+.ab{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.2rem}
+.ab small{color:var(--mute);display:block;margin-bottom:.9rem}
+.resp{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.resp>div{border:1px solid var(--line);border-radius:8px;padding:.8rem;font-size:.9rem}
+.resp .win{border-color:var(--acc)}
+.resp b{display:block;margin-bottom:.4rem}
+.bar{height:5px;border-radius:3px;background:var(--line);margin:.35rem 0 .7rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--cool);width:0;transition:width 1.2s ease}
+.win .bar i{background:var(--acc)}
+.ab p{font-size:.9rem;color:var(--mute);margin:.9rem 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.chip{border:1px solid var(--line);border-radius:99px;padding:.25rem .85rem;font-size:.9rem;color:var(--mute)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:2rem}
+.cards>div{background:var(--bg);padding:1.4rem}
+.cards h3{margin-bottom:.5rem}
+.cards p{font-size:.97rem;color:var(--mute);margin:0}
+.flow{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:2rem;margin-top:2.2rem}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps::before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:1px;background:var(--line)}
+.steps button{all:unset;box-sizing:border-box;display:flex;gap:.8rem;align-items:center;width:100%;padding:.5rem .4rem;cursor:pointer;color:var(--mute);position:relative;border-radius:6px}
+.steps button::before{content:"";flex:none;width:11px;height:11px;margin:0 9px;border-radius:50%;background:var(--bg);border:1px solid var(--mute);z-index:1}
+.steps button[aria-selected=true]{color:var(--text)}
+.steps button[aria-selected=true]::before{background:var(--acc);border-color:var(--acc)}
+.steps button.done::before{border-color:var(--acc)}
+.steps button:focus-visible{outline:2px solid var(--acc)}
+.pane{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.6rem;min-height:290px}
+.pane h3{font-size:1.7rem;margin-bottom:.8rem}
+.pane ul{margin:1rem 0 0;padding-left:1.1rem;color:var(--mute)}
+.pane .meta{margin-top:1.4rem;color:var(--cool);font-size:.95rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.6rem;margin-top:2.2rem}
+.stats b{display:block;font:400 clamp(2.4rem,5vw,3.4rem)/1 Newsreader,serif;color:var(--acc)}
+.stats span{color:var(--mute);font-size:.95rem;display:block;margin-top:.4rem}
+.xp{display:grid;gap:1rem;margin-top:2rem}
+.xp article{display:grid;grid-template-columns:150px 1fr;gap:1.5rem;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1.5rem}
+.xp time{color:var(--mute);font-size:.95rem}
+.xp h3 small{display:block;font:500 .95rem "Hanken Grotesk",sans-serif;color:var(--acc);margin-bottom:.35rem}
+.xp ul{margin:.8rem 0 0;padding-left:1.1rem;color:var(--mute);font-size:.98rem}
+.xp li{margin-bottom:.3rem}
+.more{margin-top:1.6rem;color:var(--mute);font-size:.98rem}
+.more b{color:var(--text);font-weight:500}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;margin-top:2rem}
+.proj article{border:1px solid var(--line);border-radius:10px;padding:1.6rem;background:var(--panel)}
+.proj dl{margin:1rem 0 0}.proj dt{font-weight:600;font-size:.95rem;margin-top:.9rem}
+.proj dd{margin:.15rem 0 0;color:var(--mute);font-size:.97rem}
+.tag{display:inline-block;border:1px dashed var(--acc);color:var(--acc);border-radius:4px;padding:.1rem .6rem;font-size:.85rem;margin-bottom:.8rem}
+.edu li{margin-bottom:.4rem;color:var(--mute)}
+ul.plain{padding-left:1.1rem;margin:.8rem 0}
+.contact{text-align:left}
+.contact a.big{font:400 clamp(1.5rem,4vw,2.5rem) Newsreader,serif;word-break:break-all;text-decoration:underline;text-decoration-color:var(--acc);text-underline-offset:6px}
+footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+@media (max-width:820px){.hero .grid,.two,.flow{grid-template-columns:1fr}.xp article{grid-template-columns:1fr;gap:.4rem}section{padding:4rem 0}.steps::before{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
+main{display:flex;flex-direction:column}
+#experience{order:1}#tools,#education,#contact{order:2}
+.proof{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;padding:1.4rem 0 0;margin:2rem 0 0;border-top:1px solid var(--line)}
+.proof li{color:var(--mute);font-size:.95rem}
+.proof b{display:block;font:400 1.7rem/1.1 Newsreader,serif;color:var(--acc)}
+.fit{margin:1rem 0 0;font-size:.95rem;color:var(--mute)}
+.kw{margin:1.1rem 0 0;font-size:1.15rem;font-weight:500;color:var(--cool)}.kw+.sub{margin-top:.9rem}
+.wide{grid-column:1/-1}.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.pair>div{border:1px solid var(--line);border-radius:8px;padding:.9rem}.pair p{margin:.3rem 0 0;font-size:.95rem;color:var(--mute)}
+.tw{overflow-x:auto;margin-top:1rem}table{border-collapse:collapse;width:100%;min-width:360px;font-size:.95rem}
+th,td{text-align:left;padding:.55rem .8rem;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:500}tr.fin td{font-weight:600;color:var(--acc)}
+table{min-width:560px}.resp .v{margin:.6rem 0 0;font-weight:600;color:var(--text)}.win .v{color:var(--acc)}.ab a{color:var(--acc)}
+.ns{padding-left:1.2rem;margin-top:1.5rem;color:var(--mute)}.ns li{margin-bottom:.7rem}.ns b{color:var(--text);font-weight:500}.js .ns{display:none}html:not(.js) .flow{display:block}html:not(.js) .steps,html:not(.js) .pane{display:none}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Hammed Ayodeji Falese", "jobTitle": "LLM Evaluator & AI Quality Specialist", "email": "ayodejihammed853@gmail.com", "sameAs": ["https://linkedin.com/in/hammed-falese-a98b3b3a3"], "alumniOf": "Obafemi Awolowo University", "knowsAbout": ["LLM evaluation", "RLHF", "AI safety", "Multimodal evaluation", "Annotation QA"]}</script>
+</head>
+<body>
+<nav aria-label="Primary"><div class="wrap"><b>Hammed Falese</b><a href="#how">How I evaluate</a><a href="#experience">Experience</a><a href="#projects">Case studies</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+<main>
+<section class="hero" id="top"><div class="wrap grid">
+<div>
+<h1>LLM Evaluator & AI Quality Specialist</h1>
+<p class="kw">RLHF, factuality, safety, multimodal evaluation, and annotation QA.</p>
+<p class="sub">AI Data Specialist with 4+ years ranking model outputs, producing preference data, and QC-reviewing annotation across text, image, audio, and video. Background in logic and ethics. Native English and Yoruba.</p>
+<div class="ctas"><a class="btn p" href="#projects">View case studies</a><a class="btn" href="#contact">Contact me</a><a class="btn" href="Hammed_Falese_CV.pdf" download>Download CV</a></div>
+<ul class="proof" aria-label="Key proof"><li><b>92</b>QC assignments, above the 95% threshold</li><li><b>Thousands</b>of LLM responses evaluated</li><li><b>4+ yrs</b>in AI data work</li></ul>
+<p class="fit">Open to roles in LLM evaluation, RLHF data operations, AI quality, annotation QA, and multimodal evaluation.</p>
+</div>
+<aside class="ab" aria-label="Illustrative example"><small>Illustrative example, not production data</small>
+<p style="margin:0 0 .9rem">Prompt: explain how vaccines train the immune system.</p>
+<div class="resp"><div><b>Response A</b>Fluent and complete, but claims "100% protection."<p class="v">Reject</p></div><div class="win"><b>Response B</b>Accurate and safe; omits boosters.<p class="v">Preferred</p></div></div>
+<p><a href="#projects">See the full evaluation</a></p></aside>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>Where I fit</h2><p class="lead">What I do now, and where I'm clear about limits.</p>
+<div class="cards">
+<div><h3>Core tracks</h3><p>LLM evaluation and RLHF preference data. Annotation QA and QC review. Multimodal (image and video) evaluation.</p></div>
+<div><h3>Supporting strengths</h3><p>Factuality and policy-compliance review, computer vision labeling, software QA testing, and AI governance literacy (NIST AI RMF, EU AI Act).</p></div>
+<div><h3>What sets me apart</h3><p>Logic and fallacy training for catching unsupported claims behind fluent writing. A written justification for every ranking. Ambiguity marked, not guessed. Steady work through changing guidelines. Native English and Yoruba, with Nigerian and African context.</p></div>
+<div><h3>Professional focus</h3><p>I specialize in evaluating, ranking, quality-checking, and improving AI-generated outputs and human-labeled datasets, across LLMs, multimodal systems, factuality, safety, and annotation quality.</p></div>
+</div>
+<p class="more"><b>Best-fit teams:</b> LLM evaluation, RLHF and human-data operations, annotation QA, AI safety and policy review operations, and QA testing.</p>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+<h2>Core expertise</h2><p class="lead">What I do in each area.</p>
+<div class="cards">
+<div><h3>LLM evaluation</h3><p>Rubric-based scoring, A/B comparison, and checks for instruction following and reasoning, each with a written justification.</p></div>
+<div><h3>RLHF and preference data</h3><p>Preference ranking, structured feedback, and original fact-checked responses written for AI training.</p></div>
+<div><h3>Safety and factuality</h3><p>Finding hallucinations, misinformation, and unsupported claims. Reviewing content for policy compliance and safety.</p></div>
+<div><h3>NLP and text annotation</h3><p>Text classification, named entity recognition, sentiment and intent labeling, following annotation guidelines.</p></div>
+<div><h3>Multimodal evaluation</h3><p>Ranking AI image and video edits on prompt adherence, realism, and artifacts. Reviewing multimodal prompt-response pairs.</p></div>
+<div><h3>Computer vision data</h3><p>Egocentric video labeling, bounding boxes, and frame-level inconsistency reports.</p></div>
+<div><h3>Annotation QA</h3><p>QC review, peer validation with written feedback, and dataset validation and cleaning.</p></div>
+<div><h3>Software QA</h3><p>Structured test cycles on web and mobile products with reproducible bug reports.</p></div>
+<div><h3>AI ethics and governance</h3><p>NIST AI RMF and EU AI Act applied to bias, privacy, and accountability.</p></div>
+</div></div></section>
+
+<section id="how"><div class="wrap">
+<h2>How I evaluate AI</h2><p class="lead">The sequence I follow on a response. Select a step.</p>
+<div class="flow">
+<ol class="steps" role="tablist" aria-label="Evaluation steps" aria-orientation="vertical" id="steps"></ol>
+<div class="pane" role="tabpanel" aria-live="polite" id="pane" tabindex="0"></div>
+<ol class="ns"><li><b>Understand the prompt.</b> Identify what the user actually wants, including implicit constraints and context. Intent and audience. Explicit and implied constraints.</li><li><b>Evaluate the response.</b> Read the whole answer before judging any part. Completeness and clarity. Tone fit.</li><li><b>Check instruction following.</b> Compare the output against every requirement in the prompt. Format, length, scope. Anything ignored or added.</li><li><b>Check factuality.</b> Verify claims independently rather than trusting fluency. Hallucinations. Unsupported claims and misinformation.</li><li><b>Check reasoning.</b> Follow the logic step by step. Fallacies and gaps. Conclusions that do not follow.</li><li><b>Check safety and policy.</b> Review against content and policy guidelines. Harmful or policy-violating content. Bias and ethical risk.</li><li><b>Compare alternatives.</b> Rank side by side against the rubric, not by which sounds better. Pairwise preference. Mark ambiguity as unsure where protocol says so.</li><li><b>Write the justification.</b> State the reason for the ranking so it can be audited and calibrated. Specific evidence. Consistent with the guidelines.</li><li><b>Final quality decision.</b> Submit the score or ranking and feed recurring weaknesses back. Decision recorded. Patterns reported for improvement.</li></ol>
+</div></div></section>
+
+<section id="proof"><div class="wrap">
+<h2>Evidence in numbers</h2>
+<div class="stats">
+<div><b>4+</b><span>years in AI data and evaluation</span></div>
+<div><b>Thousands</b><span>of LLM responses evaluated</span></div>
+<div><b>92</b><span>BLEND QC assignments</span></div>
+<div><b>95%+</b><span>BLEND post-QC accuracy, above the required 95% threshold</span></div>
+<div><b>8</b><span>axes used to rank image and video edits</span></div>
+<div><b>4.38/5</b><span>university CGPA</span></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<p class="lead">Project-based and freelance work across AI data platforms, run concurrently and ordered by relevance to evaluation and quality.</p>
+<div class="xp">
+<article><time>Oct 2022 – present</time><div><h3><small>Outlier (Scale AI)</small>AI Data Contributor & LLM Evaluator</h3>
+<ul><li>Scored thousands of LLM responses against rubrics for correctness, reasoning, instruction adherence, completeness, clarity, tone, and safety.</li><li>Ran side-by-side comparisons, with a written justification for every ranking.</li><li>Flagged hallucinations, misinformation, and unsupported claims; applied RLHF principles to align outputs with user intent.</li><li>Wrote original fact-checked responses for training; reviewed multimodal pairs; worked with QA specialists as guidelines changed.</li></ul></div></article>
+<article><time>2025 – present</time><div><h3><small>BLEND</small>Image & Video Edit Ranking Annotator / QC Reviewer</h3>
+<ul><li>Completed 92 QC assignments, keeping post-QC accuracy above the 95% threshold.</li><li>Ranked A/B image and video edits across 8 axes, including prompt adherence, reference fidelity, realism, and artifacts.</li><li>Marked ambiguous cases "Unsure" per protocol to protect dataset integrity.</li></ul></div></article>
+<article><time>2025 – present</time><div><h3><small>Mindrift (Toloka)</small>AI Data Annotator & Visual Quality Evaluator</h3>
+<ul><li>Passed qualification with 80%+ accuracy to unlock paid production tasks.</li><li>Compared AI image pairs on aesthetics, technical integrity, and prompt relevance; validated video pairs against 7 metric labels.</li></ul></div></article>
+<article><time>Mar 2023 – Apr 2026</time><div><h3><small>Appen / CrowdGen</small>AI Language & Content Evaluator / Peer Validator</h3>
+<ul><li>Evaluated conversational AI for coherence, tone, and correctness.</li><li>Validated peer annotations with written feedback and applied Nigerian and African cultural context to local reviews.</li></ul></div></article>
+<article><time>Jan 2026 – present</time><div><h3><small>Atlas Capture · Test.io</small>Egocentric Video Annotator · QA Crowd Tester</h3>
+<ul><li>Labeled first-person video for computer vision: hand-object interactions and temporal action sequences.</li><li>Earned 10 badges on Test.io for detailed, reproducible bug reports.</li></ul></div></article>
+</div>
+<p class="more"><b>Also:</b> TELUS International AI (AI rater, 2023–2026), Defined.ai (AI data specialist, 2022–2025), micro1 (NLP annotator: sentiment, NER, intent, 2023–2024), and freelance AI data annotation and response evaluation (2024–present).</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Case studies and projects</h2>
+<div class="proj"><article class="wide"><span class="tag">Illustrative example based on my evaluation methodology. No confidential client data is shown.</span>
+<h3>Flagship case study: ranking two LLM answers</h3>
+<dl><dt>Task</dt><dd>Prompt: "In under 120 words, explain to a general reader how vaccines train the immune system." Rank two responses against a standard rubric.</dd></dl>
+<div class="pair"><div><b>Response A</b><p>Clear, within the limit, well structured. States that vaccines give "100% protection."</p></div><div><b>Response B</b><p>Within the limit. Explains how antigens prime memory cells and says protection is not absolute. Does not mention boosters.</p></div></div>
+<div class="tw"><table><thead><tr><th>Criterion</th><th>A</th><th>B</th><th>Note</th></tr></thead><tbody><tr><td>Instruction following</td><td>Strong</td><td>Strong</td><td>Both meet the length limit and audience.</td></tr><tr><td>Completeness</td><td>Strong</td><td>Moderate</td><td>B omits boosters.</td></tr><tr><td>Factuality</td><td>Weak</td><td>Strong</td><td>A: "100% protection" is unsupported.</td></tr><tr><td>Reasoning</td><td>Moderate</td><td>Strong</td><td>A: right mechanism, overreaching conclusion.</td></tr><tr><td>Safety</td><td>Moderate</td><td>Strong</td><td>Overstated medical certainty can mislead.</td></tr><tr class="fin"><td>Overall</td><td>Reject</td><td>Preferred</td><td></td></tr></tbody></table></div>
+<dl><dt>Written justification</dt><dd>B preferred. A overstates efficacy with no support, a factual and safety problem in a health answer. B is accurate and safe; the missing booster detail is minor and easy to fix.</dd>
+<dt>Final quality decision</dt><dd>A rejected for an unsupported claim. B accepted as preferred, with the booster gap noted as a minor completeness issue.</dd>
+<dt>Why it matters</dt><dd>Preference data that rewards polish over accuracy can teach models to sound sure rather than be right. The review exists to catch one confident error behind fluent writing.</dd></dl></article><article><span class="tag">Case study from my BLEND work</span><h3>Quality control on subjective image and video rankings</h3>
+<dl><dt>Challenge</dt><dd>A/B edit rankings rest on judgment, so dataset quality depends on applying one standard consistently.</dd>
+<dt>Evaluation framework</dt><dd>8 axes, including prompt adherence, reference fidelity, placement, realism, and artifacts, under e-commerce catalog and UGC guidelines.</dd>
+<dt>Quality-control process</dt><dd>QC specialist on model-training assignments, held to a required 95% post-QC accuracy threshold.</dd>
+<dt>Judgment</dt><dd>Ambiguous cases were marked "Unsure" per protocol instead of guessed, to protect dataset integrity.</dd>
+<dt>Outcome</dt><dd>92 assignments completed with post-QC accuracy above the required 95% threshold. The documented standard is the threshold, not an average score.</dd></dl></article>
+<article><h3>AI Ethics & Governance Project</h3>
+<dl><dt>Problem</dt><dd>Deploying AI ethically requires a concrete governance framework, not just principles.</dd>
+<dt>What I studied</dt><dd>The NIST AI Risk Management Framework and the EU AI Act, applied to a governance framework.</dd>
+<dt>Analysis</dt><dd>Algorithmic bias and privacy risks, with audit and accountability safeguards.</dd>
+<dt>What it shows</dt><dd>How I reason about AI risk, bias, and accountability in a structured way.</dd></dl></article>
+<article><h3>Communal Obligations and Individual Rights in African Social Structures</h3>
+<dl><dt>Theme</dt><dd>How communal duties and individual rights relate in African social structures. Final-year research, 2024.</dd>
+<dt>Method</dt><dd>Interviews with 8 community leaders and 4 scholars; conceptual and thematic analysis of texts and transcripts.</dd>
+<dt>Output</dt><dd>A 5,000-word paper, presented at a university research symposium.</dd>
+<dt>Relevance</dt><dd>Reasoning, ethics, and cultural-context analysis that I bring to evaluating AI outputs.</dd></dl></article>
+
+
+</div></div></section>
+
+<section id="tools"><div class="wrap">
+<h2>Tools and platforms</h2>
+<p class="lead">Tools I use in my evaluation and annotation work.</p>
+<div class="two"><div><h3>AI evaluation environments</h3><div class="chips"><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Gemini</span></div></div><div><h3>Annotation and productivity</h3><div class="chips"><span class="chip">Label Studio</span><span class="chip">Google Workspace</span><span class="chip">Microsoft Office</span><span class="chip">Slack</span><span class="chip">Discord</span><span class="chip">Zoom</span><span class="chip">Trello</span></div></div></div>
+</div></section>
+
+<section id="education"><div class="wrap two">
+<div><h2>Education</h2>
+<h3>B.A. Philosophy and English</h3>
+<p class="lead">Obafemi Awolowo University, Ile-Ife · 2019–2024</p>
+<ul class="plain edu"><li>CGPA 4.38/5.00, Second Class Upper Division</li><li>Best Graduating Student, Department of Philosophy (2024)</li><li>Formal logic, fallacy analysis, ethical reasoning, linguistics, semantics, discourse analysis: the basis for how I check reasoning and language in model outputs</li></ul>
+<h3 style="margin-top:2rem">Certifications</h3>
+<ul class="plain edu"><li>AI for Everyone, Coursera (2023)</li><li>Data Annotation Certificate, Appen Academy (2023)</li><li>Quality Management Systems Training (2024)</li><li>Software Testing & QA, Test.io (2026)</li></ul></div>
+<div><h2>Languages</h2>
+<p><b>English:</b> native / C2<br><b>Yoruba:</b> native</p>
+<p>Cultural and linguistic context changes what a correct answer looks like. I have applied Nigerian and African context in locally relevant reviews, and preserved tone, dialect, and speaker intent in transcription work.</p></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Available immediately for AI evaluation and data quality work</h2>
+<p class="lead">Based in Akure, Nigeria. Remote.</p>
+<p><a class="big" href="mailto:ayodejihammed853@gmail.com">ayodejihammed853@gmail.com</a></p>
+<div class="ctas"><a class="btn p" href="mailto:ayodejihammed853@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/hammed-falese-a98b3b3a3" rel="noopener">LinkedIn</a><a class="btn" href="Hammed_Falese_CV.pdf" download>Download CV</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">Hammed Ayodeji Falese · AI Data Specialist, LLM Evaluator</div></footer>
+<script>
+document.documentElement.classList.add("js");
+const S=[["Understand the prompt", "Identify what the user actually wants, including implicit constraints and context.", ["Intent and audience", "Explicit and implied constraints"]], ["Evaluate the response", "Read the whole answer before judging any part.", ["Completeness and clarity", "Tone fit"]], ["Check instruction following", "Compare the output against every requirement in the prompt.", ["Format, length, scope", "Anything ignored or added"]], ["Check factuality", "Verify claims independently rather than trusting fluency.", ["Hallucinations", "Unsupported claims and misinformation"]], ["Check reasoning", "Follow the logic step by step.", ["Fallacies and gaps", "Conclusions that do not follow"]], ["Check safety and policy", "Review against content and policy guidelines.", ["Harmful or policy-violating content", "Bias and ethical risk"]], ["Compare alternatives", "Rank side by side against the rubric, not by which sounds better.", ["Pairwise preference", "Mark ambiguity as unsure where protocol says so"]], ["Write the justification", "State the reason for the ranking so it can be audited and calibrated.", ["Specific evidence", "Consistent with the guidelines"]], ["Final quality decision", "Submit the score or ranking and feed recurring weaknesses back.", ["Decision recorded", "Patterns reported for improvement"]]];
+const ol=document.getElementById("steps"),pane=document.getElementById("pane"),tabs=[];
+function show(i,f){tabs.forEach((b,j)=>{b.setAttribute("aria-selected",j===i);b.tabIndex=j===i?0:-1;b.classList.toggle("done",j<i)});
+pane.setAttribute("aria-labelledby",tabs[i].id);const[t,d,l]=S[i];
+pane.innerHTML=`<h3>${t}</h3><p>${d}</p><ul>${l.map(x=>`<li>${x}</li>`).join("")}</ul><p class="meta">Step ${i+1} of ${S.length}</p>`;if(f)tabs[i].focus()}
+S.forEach((s,i)=>{const li=document.createElement("li"),b=document.createElement("button");li.setAttribute("role","presentation");
+b.id="tab"+i;b.textContent=s[0];b.setAttribute("role","tab");b.setAttribute("aria-controls","pane");b.onclick=()=>show(i);tabs.push(b);li.append(b);ol.append(li)});
+ol.addEventListener("keydown",e=>{const c=tabs.indexOf(document.activeElement),k={ArrowDown:1,ArrowRight:1,ArrowUp:-1,ArrowLeft:-1}[e.key];
+if(k){e.preventDefault();show((c+k+S.length)%S.length,1)}else if(e.key==="Home"){e.preventDefault();show(0,1)}else if(e.key==="End"){e.preventDefault();show(S.length-1,1)}});
+show(0);
+</script>
+</body>
+</html>
