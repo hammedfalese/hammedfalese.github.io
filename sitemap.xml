@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hammedfalese.github.io/</loc>
-    <lastmod>2026-10-07</lastmod>
-  </url>
+<urlset xmlns="http://sitemaps.org">
+   <url>
+      <loc>https://hammedfalese.github.io/</loc>
+      <lastmod>2026-10-07</lastmod>
+   </url>
 </urlset>
